@@ -7,6 +7,7 @@ const ordersRouter = require('../app/orders/orders.router');
 const bookingsRouter = require('../app/bookings/bookings.router');
 const reservationsRouter = require('../app/reservations/reservations.router');
 const housekeepingCallsRouter = require('../app/housekeepingCalls/housekeepingCalls.router');
+const staffsRouter = require('../app/staffs/staffs.router');
 
 //routes
 router.use(authRouter);
@@ -15,7 +16,8 @@ router.use('/tables', tablesRouter);
 router.use('/orders', ordersRouter);
 router.use('/bookings', bookingsRouter);
 router.use('/reservations', reservationsRouter);
-router.use('/housekeepingCalls', reservationsRouter);
+router.use('/housekeepingCalls', housekeepingCallsRouter);
+router.use('/staffs', staffsRouter);
 
 //exports
 module.exports = router;
