@@ -5,3 +5,32 @@
 #new_btn{
   color:black;
 }
+
+#carouselExampleControls{
+  height:450px;
+  grid-area:header;
+  margin-top:5px;
+}
+.carousel-inner{
+  height:450px;
+}
+.home{
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-areas: "header header"
+                      "book book"
+                      "about history";
+  grid-row-gap:5px;
+  grid-column-gap:5px;
+}
+
+.about{
+  grid-area:about;
+}
+#book{
+  grid-area:book;
+  border:1px black solid;
+  height:100px;
+  padding:20px;
+  display:block;
+}
